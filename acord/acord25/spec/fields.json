@@ -1,0 +1,56 @@
+[
+  {
+    "id": "producer.name",
+    "label": "Producer Name",
+    "section": "producer",
+    "type": "string",
+    "required": false,
+    "acord_ref": "10517_A",
+    "notes": ""
+  },
+  {
+    "id": "producer.address.line1",
+    "label": "Producer Address Line 1",
+    "section": "producer",
+    "type": "string",
+    "required": false,
+    "acord_ref": "10518_A",
+    "notes": ""
+  },
+  {
+    "id": "producer.address.line2",
+    "label": "Producer Address Line 2",
+    "section": "producer",
+    "type": "string",
+    "required": false,
+    "acord_ref": "81_A",
+    "notes": ""
+  },
+  {
+    "id": "producer.phone",
+    "label": "Producer Phone",
+    "section": "producer",
+    "type": "string",
+    "required": false,
+    "acord_ref": "7_A",
+    "notes": ""
+  },
+  {
+    "id": "producer.fax",
+    "label": "Producer Fax",
+    "section": "producer",
+    "type": "string",
+    "required": false,
+    "acord_ref": "14_A",
+    "notes": ""
+  },
+  {
+    "id": "producer.email",
+    "label": "Producer Email",
+    "section": "producer",
+    "type": "string",
+    "required": false,
+    "acord_ref": "2_A",
+    "notes": ""
+  }
+]
