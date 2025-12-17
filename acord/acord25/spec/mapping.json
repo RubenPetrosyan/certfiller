@@ -1,0 +1,198 @@
+{
+  "producer.name": {
+    "type": "text",
+    "pdf_fields": ["Producer_FullName_A"]
+  },
+  "producer.address.line1": {
+    "type": "text",
+    "pdf_fields": ["Producer_MailingAddress_LineOne_A"]
+  },
+  "producer.address.line2": {
+    "type": "text",
+    "pdf_fields": ["Producer_MailingAddress_LineTwo_A"]
+  },
+  "producer.address.city": {
+    "type": "text",
+    "pdf_fields": ["Producer_MailingAddress_CityName_A"]
+  },
+  "producer.address.state": {
+    "type": "text",
+    "pdf_fields": ["Producer_MailingAddress_StateOrProvinceCode_A"]
+  },
+  "producer.address.zip": {
+    "type": "text",
+    "pdf_fields": ["Producer_MailingAddress_PostalCode_A"]
+  },
+  "producer.phone": {
+    "type": "text",
+    "pdf_fields": ["Producer_ContactPerson_PhoneNumber_A"]
+  },
+  "producer.fax": {
+    "type": "text",
+    "pdf_fields": ["Producer_FaxNumber_A"]
+  },
+  "producer.email": {
+    "type": "text",
+    "pdf_fields": ["Producer_ContactPerson_EmailAddress_A"]
+  },
+
+  "insured.name": {
+    "type": "text",
+    "pdf_fields": ["NamedInsured_FullName_A"]
+  },
+  "insured.address.line1": {
+    "type": "text",
+    "pdf_fields": ["NamedInsured_MailingAddress_LineOne_A"]
+  },
+  "insured.address.line2": {
+    "type": "text",
+    "pdf_fields": ["NamedInsured_MailingAddress_LineTwo_A"]
+  },
+  "insured.address.city": {
+    "type": "text",
+    "pdf_fields": ["NamedInsured_MailingAddress_CityName_A"]
+  },
+  "insured.address.state": {
+    "type": "text",
+    "pdf_fields": ["NamedInsured_MailingAddress_StateOrProvinceCode_A"]
+  },
+  "insured.address.zip": {
+    "type": "text",
+    "pdf_fields": ["NamedInsured_MailingAddress_PostalCode_A"]
+  },
+
+  "insurers.a.name": {
+    "type": "text",
+    "pdf_fields": ["Insurer_FullName_A"]
+  },
+  "insurers.a.naic": {
+    "type": "text",
+    "pdf_fields": ["Insurer_NAICCode_A"]
+  },
+  "insurers.b.name": {
+    "type": "text",
+    "pdf_fields": ["Insurer_FullName_B"]
+  },
+  "insurers.b.naic": {
+    "type": "text",
+    "pdf_fields": ["Insurer_NAICCode_B"]
+  },
+  "insurers.c.name": {
+    "type": "text",
+    "pdf_fields": ["Insurer_FullName_C"]
+  },
+  "insurers.c.naic": {
+    "type": "text",
+    "pdf_fields": ["Insurer_NAICCode_C"]
+  },
+  "insurers.d.name": {
+    "type": "text",
+    "pdf_fields": ["Insurer_FullName_D"]
+  },
+  "insurers.d.naic": {
+    "type": "text",
+    "pdf_fields": ["Insurer_NAICCode_D"]
+  },
+  "insurers.e.name": {
+    "type": "text",
+    "pdf_fields": ["Insurer_FullName_E"]
+  },
+  "insurers.e.naic": {
+    "type": "text",
+    "pdf_fields": ["Insurer_NAICCode_E"]
+  },
+  "insurers.f.name": {
+    "type": "text",
+    "pdf_fields": ["Insurer_FullName_F"]
+  },
+  "insurers.f.naic": {
+    "type": "text",
+    "pdf_fields": ["Insurer_NAICCode_F"]
+  },
+
+  "policies.general_liability.policy_number": {
+    "type": "text",
+    "pdf_fields": ["Policy_GeneralLiability_PolicyNumberIdentifier_A"]
+  },
+  "policies.general_liability.effective_date": {
+    "type": "text",
+    "pdf_fields": ["Policy_GeneralLiability_EffectiveDate_A"]
+  },
+  "policies.general_liability.expiration_date": {
+    "type": "text",
+    "pdf_fields": ["Policy_GeneralLiability_ExpirationDate_A"]
+  },
+  "policies.general_liability.each_occurrence": {
+    "type": "text",
+    "pdf_fields": ["GeneralLiability_EachOccurrence_LimitAmount_A"]
+  },
+  "policies.general_liability.general_aggregate": {
+    "type": "text",
+    "pdf_fields": ["GeneralLiability_GeneralAggregate_LimitAmount_A"]
+  },
+
+  "policies.auto_liability.policy_number": {
+    "type": "text",
+    "pdf_fields": ["Policy_AutomobileLiability_PolicyNumberIdentifier_A"]
+  },
+  "policies.auto_liability.effective_date": {
+    "type": "text",
+    "pdf_fields": ["Policy_AutomobileLiability_EffectiveDate_A"]
+  },
+  "policies.auto_liability.expiration_date": {
+    "type": "text",
+    "pdf_fields": ["Policy_AutomobileLiability_ExpirationDate_A"]
+  },
+  "policies.auto_liability.combined_single_limit": {
+    "type": "text",
+    "pdf_fields": ["Vehicle_CombinedSingleLimit_EachAccidentAmount_A"]
+  },
+
+  "policies.workers_comp.policy_number": {
+    "type": "text",
+    "pdf_fields": ["Policy_WorkersCompensationAndEmployersLiability_PolicyNumberIdentifier_A"]
+  },
+  "policies.workers_comp.effective_date": {
+    "type": "text",
+    "pdf_fields": ["Policy_WorkersCompensationAndEmployersLiability_EffectiveDate_A"]
+  },
+  "policies.workers_comp.expiration_date": {
+    "type": "text",
+    "pdf_fields": ["Policy_WorkersCompensationAndEmployersLiability_ExpirationDate_A"]
+  },
+
+  "certificate.description": {
+    "type": "text",
+    "pdf_fields": ["CertificateOfLiabilityInsurance_ACORDForm_RemarkText_A"]
+  },
+
+  "certificate_holder.name": {
+    "type": "text",
+    "pdf_fields": ["CertificateHolder_FullName_A"]
+  },
+  "certificate_holder.address.line1": {
+    "type": "text",
+    "pdf_fields": ["CertificateHolder_MailingAddress_LineOne_A"]
+  },
+  "certificate_holder.address.line2": {
+    "type": "text",
+    "pdf_fields": ["CertificateHolder_MailingAddress_LineTwo_A"]
+  },
+  "certificate_holder.address.city": {
+    "type": "text",
+    "pdf_fields": ["CertificateHolder_MailingAddress_CityName_A"]
+  },
+  "certificate_holder.address.state": {
+    "type": "text",
+    "pdf_fields": ["CertificateHolder_MailingAddress_StateOrProvinceCode_A"]
+  },
+  "certificate_holder.address.zip": {
+    "type": "text",
+    "pdf_fields": ["CertificateHolder_MailingAddress_PostalCode_A"]
+  },
+
+  "signature.authorized_representative": {
+    "type": "text",
+    "pdf_fields": ["Producer_AuthorizedRepresentative_Signature_A"]
+  }
+}
