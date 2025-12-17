@@ -1,7 +1,4 @@
 [
-  /* =========================
-     IDENTIFICATION – PRODUCER
-     ========================= */
   {
     "id": "producer.name",
     "label": "Producer",
@@ -45,7 +42,7 @@
     "type": "string",
     "required": false,
     "acord_ref": "14_A",
-    "notes": "Phone (A/C, No, Ext)"
+    "notes": ""
   },
   {
     "id": "producer.fax",
@@ -65,10 +62,6 @@
     "acord_ref": "4_A",
     "notes": ""
   },
-
-  /* =====================
-     INSURED
-     ===================== */
   {
     "id": "insured.name",
     "label": "Insured",
@@ -123,10 +116,6 @@
     "acord_ref": "15_F",
     "notes": ""
   },
-
-  /* =====================
-     INSURERS (A–F)
-     ===================== */
   {
     "id": "insurer.A.name",
     "label": "Insurer A Name",
@@ -235,10 +224,6 @@
     "acord_ref": "51_A",
     "notes": ""
   },
-
-  /* =====================
-     CERTIFICATE
-     ===================== */
   {
     "id": "certificate.number",
     "label": "Certificate Number",
@@ -266,10 +251,6 @@
     "acord_ref": "72_A",
     "notes": ""
   },
-
-  /* =====================
-     CERTIFICATE HOLDER
-     ===================== */
   {
     "id": "certificate_holder.name",
     "label": "Certificate Holder Name",
@@ -324,10 +305,6 @@
     "acord_ref": "1701_A",
     "notes": ""
   },
-
-  /* =====================
-     REMARKS & SIGNATURE
-     ===================== */
   {
     "id": "remarks.description",
     "label": "Description of Operations / Locations / Vehicles",
