@@ -1,12 +1,21 @@
 [
   {
     "id": "producer.name",
-    "label": "Producer Name",
+    "label": "Producer",
     "section": "producer",
     "type": "string",
     "required": false,
     "acord_ref": "10517_A",
-    "notes": ""
+    "notes": "Producer or agency name"
+  },
+  {
+    "id": "producer.contact_name",
+    "label": "Producer Contact Name",
+    "section": "producer",
+    "type": "string",
+    "required": false,
+    "acord_ref": "10518_A",
+    "notes": "Primary contact at producer"
   },
   {
     "id": "producer.address.line1",
@@ -14,7 +23,7 @@
     "section": "producer",
     "type": "string",
     "required": false,
-    "acord_ref": "10518_A",
+    "acord_ref": "81_A",
     "notes": ""
   },
   {
@@ -23,7 +32,7 @@
     "section": "producer",
     "type": "string",
     "required": false,
-    "acord_ref": "81_A",
+    "acord_ref": "7_A",
     "notes": ""
   },
   {
@@ -32,7 +41,16 @@
     "section": "producer",
     "type": "string",
     "required": false,
-    "acord_ref": "7_A",
+    "acord_ref": "14_A",
+    "notes": "Main phone number"
+  },
+  {
+    "id": "producer.phone_extension",
+    "label": "Producer Phone Extension",
+    "section": "producer",
+    "type": "string",
+    "required": false,
+    "acord_ref": "2_A",
     "notes": ""
   },
   {
@@ -41,7 +59,7 @@
     "section": "producer",
     "type": "string",
     "required": false,
-    "acord_ref": "14_A",
+    "acord_ref": "3_A",
     "notes": ""
   },
   {
@@ -50,7 +68,7 @@
     "section": "producer",
     "type": "string",
     "required": false,
-    "acord_ref": "2_A",
+    "acord_ref": "4_A",
     "notes": ""
   }
 ]
