@@ -1,4 +1,7 @@
 [
+  /* =========================
+     IDENTIFICATION – PRODUCER
+     ========================= */
   {
     "id": "producer.name",
     "label": "Producer",
@@ -6,16 +9,16 @@
     "type": "string",
     "required": false,
     "acord_ref": "10517_A",
-    "notes": "Producer or agency name"
+    "notes": ""
   },
   {
     "id": "producer.contact_name",
-    "label": "Producer Contact Name",
+    "label": "Contact Name",
     "section": "producer",
     "type": "string",
     "required": false,
     "acord_ref": "10518_A",
-    "notes": "Primary contact at producer"
+    "notes": ""
   },
   {
     "id": "producer.address.line1",
@@ -37,25 +40,16 @@
   },
   {
     "id": "producer.phone",
-    "label": "Producer Phone",
+    "label": "Phone",
     "section": "producer",
     "type": "string",
     "required": false,
     "acord_ref": "14_A",
-    "notes": "Main phone number"
-  },
-  {
-    "id": "producer.phone_extension",
-    "label": "Producer Phone Extension",
-    "section": "producer",
-    "type": "string",
-    "required": false,
-    "acord_ref": "2_A",
-    "notes": ""
+    "notes": "Phone (A/C, No, Ext)"
   },
   {
     "id": "producer.fax",
-    "label": "Producer Fax",
+    "label": "Fax",
     "section": "producer",
     "type": "string",
     "required": false,
@@ -64,11 +58,292 @@
   },
   {
     "id": "producer.email",
-    "label": "Producer Email",
+    "label": "Email Address",
     "section": "producer",
     "type": "string",
     "required": false,
     "acord_ref": "4_A",
+    "notes": ""
+  },
+
+  /* =====================
+     INSURED
+     ===================== */
+  {
+    "id": "insured.name",
+    "label": "Insured",
+    "section": "insured",
+    "type": "string",
+    "required": true,
+    "acord_ref": "15_A",
+    "notes": ""
+  },
+  {
+    "id": "insured.address.line1",
+    "label": "Insured Address Line 1",
+    "section": "insured",
+    "type": "string",
+    "required": true,
+    "acord_ref": "15_B",
+    "notes": ""
+  },
+  {
+    "id": "insured.address.line2",
+    "label": "Insured Address Line 2",
+    "section": "insured",
+    "type": "string",
+    "required": false,
+    "acord_ref": "15_C",
+    "notes": ""
+  },
+  {
+    "id": "insured.city",
+    "label": "City",
+    "section": "insured",
+    "type": "string",
+    "required": true,
+    "acord_ref": "15_D",
+    "notes": ""
+  },
+  {
+    "id": "insured.state",
+    "label": "State",
+    "section": "insured",
+    "type": "string",
+    "required": true,
+    "acord_ref": "15_E",
+    "notes": ""
+  },
+  {
+    "id": "insured.zip",
+    "label": "ZIP / Postal Code",
+    "section": "insured",
+    "type": "string",
+    "required": true,
+    "acord_ref": "15_F",
+    "notes": ""
+  },
+
+  /* =====================
+     INSURERS (A–F)
+     ===================== */
+  {
+    "id": "insurer.A.name",
+    "label": "Insurer A Name",
+    "section": "insurers",
+    "type": "string",
+    "required": false,
+    "acord_ref": "28_A",
+    "notes": ""
+  },
+  {
+    "id": "insurer.A.naic",
+    "label": "Insurer A NAIC #",
+    "section": "insurers",
+    "type": "string",
+    "required": false,
+    "acord_ref": "29_A",
+    "notes": ""
+  },
+  {
+    "id": "insurer.B.name",
+    "label": "Insurer B Name",
+    "section": "insurers",
+    "type": "string",
+    "required": false,
+    "acord_ref": "30_A",
+    "notes": ""
+  },
+  {
+    "id": "insurer.B.naic",
+    "label": "Insurer B NAIC #",
+    "section": "insurers",
+    "type": "string",
+    "required": false,
+    "acord_ref": "36_A",
+    "notes": ""
+  },
+  {
+    "id": "insurer.C.name",
+    "label": "Insurer C Name",
+    "section": "insurers",
+    "type": "string",
+    "required": false,
+    "acord_ref": "31_A",
+    "notes": ""
+  },
+  {
+    "id": "insurer.C.naic",
+    "label": "Insurer C NAIC #",
+    "section": "insurers",
+    "type": "string",
+    "required": false,
+    "acord_ref": "21_A",
+    "notes": ""
+  },
+  {
+    "id": "insurer.D.name",
+    "label": "Insurer D Name",
+    "section": "insurers",
+    "type": "string",
+    "required": false,
+    "acord_ref": "32_A",
+    "notes": ""
+  },
+  {
+    "id": "insurer.D.naic",
+    "label": "Insurer D NAIC #",
+    "section": "insurers",
+    "type": "string",
+    "required": false,
+    "acord_ref": "21_B",
+    "notes": ""
+  },
+  {
+    "id": "insurer.E.name",
+    "label": "Insurer E Name",
+    "section": "insurers",
+    "type": "string",
+    "required": false,
+    "acord_ref": "33_A",
+    "notes": ""
+  },
+  {
+    "id": "insurer.E.naic",
+    "label": "Insurer E NAIC #",
+    "section": "insurers",
+    "type": "string",
+    "required": false,
+    "acord_ref": "35_A",
+    "notes": ""
+  },
+  {
+    "id": "insurer.F.name",
+    "label": "Insurer F Name",
+    "section": "insurers",
+    "type": "string",
+    "required": false,
+    "acord_ref": "34_A",
+    "notes": ""
+  },
+  {
+    "id": "insurer.F.naic",
+    "label": "Insurer F NAIC #",
+    "section": "insurers",
+    "type": "string",
+    "required": false,
+    "acord_ref": "51_A",
+    "notes": ""
+  },
+
+  /* =====================
+     CERTIFICATE
+     ===================== */
+  {
+    "id": "certificate.number",
+    "label": "Certificate Number",
+    "section": "certificate",
+    "type": "string",
+    "required": false,
+    "acord_ref": "52_A",
+    "notes": ""
+  },
+  {
+    "id": "certificate.revision_number",
+    "label": "Revision Number",
+    "section": "certificate",
+    "type": "string",
+    "required": false,
+    "acord_ref": "11599_A",
+    "notes": ""
+  },
+  {
+    "id": "certificate.issue_date",
+    "label": "Date",
+    "section": "certificate",
+    "type": "date",
+    "required": true,
+    "acord_ref": "72_A",
+    "notes": ""
+  },
+
+  /* =====================
+     CERTIFICATE HOLDER
+     ===================== */
+  {
+    "id": "certificate_holder.name",
+    "label": "Certificate Holder Name",
+    "section": "certificate_holder",
+    "type": "string",
+    "required": true,
+    "acord_ref": "85_A",
+    "notes": ""
+  },
+  {
+    "id": "certificate_holder.address.line1",
+    "label": "Certificate Holder Address Line 1",
+    "section": "certificate_holder",
+    "type": "string",
+    "required": true,
+    "acord_ref": "86_A",
+    "notes": ""
+  },
+  {
+    "id": "certificate_holder.address.line2",
+    "label": "Certificate Holder Address Line 2",
+    "section": "certificate_holder",
+    "type": "string",
+    "required": false,
+    "acord_ref": "70_A",
+    "notes": ""
+  },
+  {
+    "id": "certificate_holder.city",
+    "label": "City",
+    "section": "certificate_holder",
+    "type": "string",
+    "required": true,
+    "acord_ref": "71_A",
+    "notes": ""
+  },
+  {
+    "id": "certificate_holder.state",
+    "label": "State",
+    "section": "certificate_holder",
+    "type": "string",
+    "required": true,
+    "acord_ref": "1197_A",
+    "notes": ""
+  },
+  {
+    "id": "certificate_holder.zip",
+    "label": "ZIP / Postal Code",
+    "section": "certificate_holder",
+    "type": "string",
+    "required": true,
+    "acord_ref": "1701_A",
+    "notes": ""
+  },
+
+  /* =====================
+     REMARKS & SIGNATURE
+     ===================== */
+  {
+    "id": "remarks.description",
+    "label": "Description of Operations / Locations / Vehicles",
+    "section": "remarks",
+    "type": "string",
+    "required": false,
+    "acord_ref": "17465_A",
+    "notes": ""
+  },
+  {
+    "id": "signature.authorized_representative",
+    "label": "Authorized Representative",
+    "section": "signature",
+    "type": "string",
+    "required": true,
+    "acord_ref": "17465_C",
     "notes": ""
   }
 ]
