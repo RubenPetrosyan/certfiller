@@ -1,0 +1,196 @@
+{
+  "form": {
+    "edition": "03/16",
+    "completion_date": "01/15/2025"
+  },
+
+  "producer": {
+    "name": "ABC Insurance Agency",
+    "address": {
+      "line1": "100 Producer Ave",
+      "line2": "Suite 500",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90001"
+    },
+    "contact": {
+      "name": "Jane Agent",
+      "phone": "555-111-2222",
+      "fax": "555-111-3333",
+      "email": "producer@test.com"
+    }
+  },
+
+  "insured": {
+    "name": "Test Insured LLC",
+    "address": {
+      "line1": "123 Main Street",
+      "line2": "",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90001"
+    }
+  },
+
+  "insurers": {
+    "A": { "name": "Insurer A", "naic": "11111" },
+    "B": { "name": "Insurer B", "naic": "22222" },
+    "C": { "name": "Insurer C", "naic": "33333" },
+    "D": { "name": "Insurer D", "naic": "44444" },
+    "E": { "name": "Insurer E", "naic": "55555" },
+    "F": { "name": "Insurer F", "naic": "66666" }
+  },
+
+  "certificate": {
+    "number": "CERT-0001",
+    "revision": "1"
+  },
+
+  "general_liability": {
+    "insurer": "A",
+    "coverage": true,
+    "claims_made": false,
+    "occur": true,
+
+    "aggregate_applies": {
+      "policy": true,
+      "project": false,
+      "location": false,
+      "other": false,
+      "other_code": ""
+    },
+
+    "additional_insured": true,
+    "subrogation_waived": false,
+
+    "policy_number": "GL-123456",
+    "effective_date": "01/01/2025",
+    "expiration_date": "01/01/2026",
+
+    "limits": {
+      "each_occurrence": "1000000",
+      "damage_to_rented": "50000",
+      "medical_expense": "5000",
+      "personal_adv_injury": "1000000",
+      "general_aggregate": "2000000",
+      "products_completed": "2000000",
+      "other_description": "",
+      "other_amount": ""
+    }
+  },
+
+  "auto_liability": {
+    "insurer": "B",
+
+    "any_auto": true,
+    "owned_autos": false,
+    "hired_autos": false,
+    "scheduled_autos": false,
+    "non_owned_autos": false,
+    "other_auto": false,
+    "other_description": "",
+
+    "additional_insured": true,
+    "subrogation_waived": false,
+
+    "policy_number": "AUTO-654321",
+    "effective_date": "01/01/2025",
+    "expiration_date": "01/01/2026",
+
+    "limits": {
+      "combined_single_limit": "1000000",
+      "bi_person": "",
+      "bi_accident": "",
+      "property_damage": "",
+      "other_description": "",
+      "other_amount": ""
+    }
+  },
+
+  "umbrella_excess": {
+    "insurer": "C",
+
+    "umbrella": true,
+    "excess": false,
+    "occur": true,
+    "claims_made": false,
+
+    "deductible": false,
+    "retention": true,
+    "deductible_retention_amount": "10000",
+
+    "additional_insured": true,
+    "subrogation_waived": false,
+
+    "policy_number": "UMB-777777",
+    "effective_date": "01/01/2025",
+    "expiration_date": "01/01/2026",
+
+    "limits": {
+      "each_occurrence": "5000000",
+      "aggregate": "5000000",
+      "other_description": "",
+      "other_amount": ""
+    }
+  },
+
+  "workers_comp": {
+    "insurer": "D",
+
+    "any_proprietor_excluded": false,
+
+    "subrogation_waived": false,
+
+    "policy_number": "WC-888888",
+    "effective_date": "01/01/2025",
+    "expiration_date": "01/01/2026",
+
+    "statutory_limits": true,
+
+    "other_coverage": false,
+    "other_description": "",
+
+    "employers_liability": {
+      "each_accident": "1000000",
+      "disease_employee": "1000000",
+      "disease_policy": "1000000"
+    }
+  },
+
+  "other_policy": {
+    "insurer": "E",
+
+    "description": "Cyber Liability",
+    "additional_insured": false,
+    "subrogation_waived": false,
+
+    "policy_number": "CYB-999999",
+    "effective_date": "01/01/2025",
+    "expiration_date": "01/01/2026",
+
+    "coverage": {
+      "A": { "code": "CYBER", "limit": "1000000" },
+      "B": { "code": "", "limit": "" },
+      "C": { "code": "", "limit": "" }
+    }
+  },
+
+  "description_of_operations": {
+    "text": "Certificate issued for informational purposes only."
+  },
+
+  "certificate_holder": {
+    "name": "Test Certificate Holder",
+    "address": {
+      "line1": "500 Market Street",
+      "line2": "",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94105"
+    }
+  },
+
+  "signature": {
+    "authorized_representative": "John Doe"
+  }
+}

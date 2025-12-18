@@ -1,27 +1,12 @@
 {
+  "form.date": {
+    "type": "text",
+    "pdf_fields": ["Form_CompletionDate_A"]
+  },
+
   "producer.name": {
     "type": "text",
     "pdf_fields": ["Producer_FullName_A"]
-  },
-  "producer.address.line1": {
-    "type": "text",
-    "pdf_fields": ["Producer_MailingAddress_LineOne_A"]
-  },
-  "producer.address.line2": {
-    "type": "text",
-    "pdf_fields": ["Producer_MailingAddress_LineTwo_A"]
-  },
-  "producer.address.city": {
-    "type": "text",
-    "pdf_fields": ["Producer_MailingAddress_CityName_A"]
-  },
-  "producer.address.state": {
-    "type": "text",
-    "pdf_fields": ["Producer_MailingAddress_StateOrProvinceCode_A"]
-  },
-  "producer.address.zip": {
-    "type": "text",
-    "pdf_fields": ["Producer_MailingAddress_PostalCode_A"]
   },
   "producer.phone": {
     "type": "text",
@@ -35,6 +20,22 @@
     "type": "text",
     "pdf_fields": ["Producer_ContactPerson_EmailAddress_A"]
   },
+  "producer.address.line1": {
+    "type": "text",
+    "pdf_fields": ["Producer_MailingAddress_LineOne_A"]
+  },
+  "producer.address.city": {
+    "type": "text",
+    "pdf_fields": ["Producer_MailingAddress_CityName_A"]
+  },
+  "producer.address.state": {
+    "type": "text",
+    "pdf_fields": ["Producer_MailingAddress_StateOrProvinceCode_A"]
+  },
+  "producer.address.zip": {
+    "type": "text",
+    "pdf_fields": ["Producer_MailingAddress_PostalCode_A"]
+  },
 
   "insured.name": {
     "type": "text",
@@ -43,10 +44,6 @@
   "insured.address.line1": {
     "type": "text",
     "pdf_fields": ["NamedInsured_MailingAddress_LineOne_A"]
-  },
-  "insured.address.line2": {
-    "type": "text",
-    "pdf_fields": ["NamedInsured_MailingAddress_LineTwo_A"]
   },
   "insured.address.city": {
     "type": "text",
@@ -61,55 +58,18 @@
     "pdf_fields": ["NamedInsured_MailingAddress_PostalCode_A"]
   },
 
-  "insurers.a.name": {
+  "policies.general_liability.insurer_letter": {
     "type": "text",
-    "pdf_fields": ["Insurer_FullName_A"]
+    "pdf_fields": ["GeneralLiability_InsurerLetterCode_A"]
   },
-  "insurers.a.naic": {
-    "type": "text",
-    "pdf_fields": ["Insurer_NAICCode_A"]
+  "policies.general_liability.claims_made": {
+    "type": "checkbox",
+    "pdf_fields": ["GeneralLiability_ClaimsMadeIndicator_A"]
   },
-  "insurers.b.name": {
-    "type": "text",
-    "pdf_fields": ["Insurer_FullName_B"]
+  "policies.general_liability.occurrence": {
+    "type": "checkbox",
+    "pdf_fields": ["GeneralLiability_OccurrenceIndicator_A"]
   },
-  "insurers.b.naic": {
-    "type": "text",
-    "pdf_fields": ["Insurer_NAICCode_B"]
-  },
-  "insurers.c.name": {
-    "type": "text",
-    "pdf_fields": ["Insurer_FullName_C"]
-  },
-  "insurers.c.naic": {
-    "type": "text",
-    "pdf_fields": ["Insurer_NAICCode_C"]
-  },
-  "insurers.d.name": {
-    "type": "text",
-    "pdf_fields": ["Insurer_FullName_D"]
-  },
-  "insurers.d.naic": {
-    "type": "text",
-    "pdf_fields": ["Insurer_NAICCode_D"]
-  },
-  "insurers.e.name": {
-    "type": "text",
-    "pdf_fields": ["Insurer_FullName_E"]
-  },
-  "insurers.e.naic": {
-    "type": "text",
-    "pdf_fields": ["Insurer_NAICCode_E"]
-  },
-  "insurers.f.name": {
-    "type": "text",
-    "pdf_fields": ["Insurer_FullName_F"]
-  },
-  "insurers.f.naic": {
-    "type": "text",
-    "pdf_fields": ["Insurer_NAICCode_F"]
-  },
-
   "policies.general_liability.policy_number": {
     "type": "text",
     "pdf_fields": ["Policy_GeneralLiability_PolicyNumberIdentifier_A"]
@@ -122,15 +82,52 @@
     "type": "text",
     "pdf_fields": ["Policy_GeneralLiability_ExpirationDate_A"]
   },
-  "policies.general_liability.each_occurrence": {
+
+  "policies.general_liability.limits.each_occurrence": {
     "type": "text",
     "pdf_fields": ["GeneralLiability_EachOccurrence_LimitAmount_A"]
   },
-  "policies.general_liability.general_aggregate": {
+  "policies.general_liability.limits.damage_to_rented": {
+    "type": "text",
+    "pdf_fields": ["GeneralLiability_FireDamageRentedPremises_EachOccurrenceLimitAmount_A"]
+  },
+  "policies.general_liability.limits.medical_expense": {
+    "type": "text",
+    "pdf_fields": ["GeneralLiability_MedicalExpense_EachPersonLimitAmount_A"]
+  },
+  "policies.general_liability.limits.personal_adv": {
+    "type": "text",
+    "pdf_fields": ["GeneralLiability_PersonalAndAdvertisingInjury_LimitAmount_A"]
+  },
+  "policies.general_liability.limits.general_aggregate": {
     "type": "text",
     "pdf_fields": ["GeneralLiability_GeneralAggregate_LimitAmount_A"]
   },
+  "policies.general_liability.limits.products_completed": {
+    "type": "text",
+    "pdf_fields": ["GeneralLiability_ProductsAndCompletedOperations_AggregateLimitAmount_A"]
+  },
 
+  "policies.auto_liability.insurer_letter": {
+    "type": "text",
+    "pdf_fields": ["Vehicle_InsurerLetterCode_A"]
+  },
+  "policies.auto_liability.any_auto": {
+    "type": "checkbox",
+    "pdf_fields": ["Vehicle_AnyAutoIndicator_A"]
+  },
+  "policies.auto_liability.owned_autos": {
+    "type": "checkbox",
+    "pdf_fields": ["Vehicle_AllOwnedAutosIndicator_A"]
+  },
+  "policies.auto_liability.hired_autos": {
+    "type": "checkbox",
+    "pdf_fields": ["Vehicle_HiredAutosIndicator_A"]
+  },
+  "policies.auto_liability.non_owned_autos": {
+    "type": "checkbox",
+    "pdf_fields": ["Vehicle_NonOwnedAutosIndicator_A"]
+  },
   "policies.auto_liability.policy_number": {
     "type": "text",
     "pdf_fields": ["Policy_AutomobileLiability_PolicyNumberIdentifier_A"]
@@ -148,6 +145,10 @@
     "pdf_fields": ["Vehicle_CombinedSingleLimit_EachAccidentAmount_A"]
   },
 
+  "policies.workers_comp.insurer_letter": {
+    "type": "text",
+    "pdf_fields": ["WorkersCompensationEmployersLiability_InsurerLetterCode_A"]
+  },
   "policies.workers_comp.policy_number": {
     "type": "text",
     "pdf_fields": ["Policy_WorkersCompensationAndEmployersLiability_PolicyNumberIdentifier_A"]
@@ -161,7 +162,7 @@
     "pdf_fields": ["Policy_WorkersCompensationAndEmployersLiability_ExpirationDate_A"]
   },
 
-  "certificate.description": {
+  "certificate.description_of_operations": {
     "type": "text",
     "pdf_fields": ["CertificateOfLiabilityInsurance_ACORDForm_RemarkText_A"]
   },
@@ -173,10 +174,6 @@
   "certificate_holder.address.line1": {
     "type": "text",
     "pdf_fields": ["CertificateHolder_MailingAddress_LineOne_A"]
-  },
-  "certificate_holder.address.line2": {
-    "type": "text",
-    "pdf_fields": ["CertificateHolder_MailingAddress_LineTwo_A"]
   },
   "certificate_holder.address.city": {
     "type": "text",
@@ -194,5 +191,54 @@
   "signature.authorized_representative": {
     "type": "text",
     "pdf_fields": ["Producer_AuthorizedRepresentative_Signature_A"]
+  },
+
+  "insurers.0.name": {
+    "type": "text",
+    "pdf_fields": ["Insurer_FullName_A"]
+  },
+  "insurers.0.naic": {
+    "type": "text",
+    "pdf_fields": ["Insurer_NAICCode_A"]
+  },
+  "insurers.1.name": {
+    "type": "text",
+    "pdf_fields": ["Insurer_FullName_B"]
+  },
+  "insurers.1.naic": {
+    "type": "text",
+    "pdf_fields": ["Insurer_NAICCode_B"]
+  },
+  "insurers.2.name": {
+    "type": "text",
+    "pdf_fields": ["Insurer_FullName_C"]
+  },
+  "insurers.2.naic": {
+    "type": "text",
+    "pdf_fields": ["Insurer_NAICCode_C"]
+  },
+  "insurers.3.name": {
+    "type": "text",
+    "pdf_fields": ["Insurer_FullName_D"]
+  },
+  "insurers.3.naic": {
+    "type": "text",
+    "pdf_fields": ["Insurer_NAICCode_D"]
+  },
+  "insurers.4.name": {
+    "type": "text",
+    "pdf_fields": ["Insurer_FullName_E"]
+  },
+  "insurers.4.naic": {
+    "type": "text",
+    "pdf_fields": ["Insurer_NAICCode_E"]
+  },
+  "insurers.5.name": {
+    "type": "text",
+    "pdf_fields": ["Insurer_FullName_F"]
+  },
+  "insurers.5.naic": {
+    "type": "text",
+    "pdf_fields": ["Insurer_NAICCode_F"]
   }
 }

@@ -1,0 +1,205 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ACORD 25 Certificate of Liability Insurance",
+  "type": "object",
+  "required": [
+    "form",
+    "producer",
+    "insured",
+    "insurers",
+    "policies",
+    "certificate_holder",
+    "signature"
+  ],
+
+  "properties": {
+    "form": {
+      "type": "object",
+      "required": ["number", "edition_date"],
+      "properties": {
+        "number": { "type": "string", "enum": ["ACORD 25"] },
+        "edition_date": { "type": "string" }
+      }
+    },
+
+    "producer": {
+      "type": "object",
+      "required": ["name", "address", "phone"],
+      "properties": {
+        "name": { "type": "string" },
+        "address": { "$ref": "#/definitions/address" },
+        "phone": { "type": "string" },
+        "fax": { "type": "string" },
+        "email": { "type": "string", "format": "email" }
+      }
+    },
+
+    "insured": {
+      "type": "object",
+      "required": ["name", "address"],
+      "properties": {
+        "name": { "type": "string" },
+        "address": { "$ref": "#/definitions/address" }
+      }
+    },
+
+    "insurers": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["letter", "name", "naic"],
+        "properties": {
+          "letter": { "type": "string", "enum": ["A", "B", "C", "D", "E", "F"] },
+          "name": { "type": "string" },
+          "naic": { "type": "string", "pattern": "^[0-9]{5}$" }
+        }
+      }
+    },
+
+    "policies": {
+      "type": "object",
+      "properties": {
+        "general_liability": {
+          "$ref": "#/definitions/policy_base",
+          "properties": {
+            "occurrence": { "type": "boolean" },
+            "claims_made": { "type": "boolean" },
+            "limits": {
+              "type": "object",
+              "properties": {
+                "each_occurrence": { "type": "string" },
+                "damage_to_rented": { "type": "string" },
+                "medical_exp": { "type": "string" },
+                "personal_adv_injury": { "type": "string" },
+                "general_aggregate": { "type": "string" },
+                "products_completed": { "type": "string" }
+              }
+            }
+          }
+        },
+
+        "auto_liability": {
+          "$ref": "#/definitions/policy_base",
+          "properties": {
+            "any_auto": { "type": "boolean" },
+            "owned_autos_only": { "type": "boolean" },
+            "hired_autos_only": { "type": "boolean" },
+            "non_owned_autos_only": { "type": "boolean" },
+            "limits": {
+              "type": "object",
+              "properties": {
+                "combined_single_limit": { "type": "string" }
+              }
+            }
+          }
+        },
+
+        "umbrella_excess": {
+          "$ref": "#/definitions/policy_base",
+          "properties": {
+            "umbrella": { "type": "boolean" },
+            "excess": { "type": "boolean" },
+            "limits": {
+              "type": "object",
+              "properties": {
+                "each_occurrence": { "type": "string" },
+                "aggregate": { "type": "string" }
+              }
+            }
+          }
+        },
+
+        "workers_comp": {
+          "$ref": "#/definitions/policy_base",
+          "properties": {
+            "wc_statutory": { "type": "boolean" },
+            "other_than_wc": {
+              "type": "object",
+              "properties": {
+                "each_accident": { "type": "string" },
+                "disease_policy_limit": { "type": "string" },
+                "disease_each_employee": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "endorsements": {
+      "type": "object",
+      "properties": {
+        "additional_insured": { "type": "boolean" },
+        "waiver_of_subrogation": { "type": "boolean" }
+      }
+    },
+
+    "certificate": {
+      "type": "object",
+      "properties": {
+        "description_of_operations": { "type": "string" },
+        "cancellation_notice": { "type": "string" }
+      }
+    },
+
+    "certificate_holder": {
+      "type": "object",
+      "required": ["name", "address"],
+      "properties": {
+        "name": { "type": "string" },
+        "address": { "$ref": "#/definitions/address" }
+      }
+    },
+
+    "signature": {
+      "type": "object",
+      "required": ["authorized_representative", "date"],
+      "properties": {
+        "authorized_representative": { "type": "string" },
+        "date": { "type": "string", "format": "date" }
+      }
+    },
+
+    "audit": {
+      "type": "object",
+      "properties": {
+        "issued_by": { "type": "string" },
+        "issued_at": { "type": "string", "format": "date-time" },
+        "revision": { "type": "integer" }
+      }
+    }
+  },
+
+  "definitions": {
+    "address": {
+      "type": "object",
+      "required": ["line1", "city", "state", "zip"],
+      "properties": {
+        "line1": { "type": "string" },
+        "line2": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string", "maxLength": 2 },
+        "zip": { "type": "string" }
+      }
+    },
+
+    "policy_base": {
+      "type": "object",
+      "required": [
+        "insurer_letter",
+        "policy_number",
+        "effective_date",
+        "expiration_date"
+      ],
+      "properties": {
+        "insurer_letter": { "type": "string", "enum": ["A", "B", "C", "D", "E", "F"] },
+        "policy_number": { "type": "string" },
+        "effective_date": { "type": "string", "format": "date" },
+        "expiration_date": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}
+
